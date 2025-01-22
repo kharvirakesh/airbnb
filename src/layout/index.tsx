@@ -1,15 +1,8 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
 import { Navbar } from "@/components/common/navbar/Navbar";
-// import Providers from './providers';
-// import { ClerkProvider } from '@clerk/nextjs';
-const inter = Inter({ subsets: ["latin"] });
+import Providers from "@/providers/providers";
+import { Inter } from 'next/font/google';
 
-export const metadata: Metadata = {
-  title: "HomeAway Draft",
-  description: "Feel at home, away from home.",
-};
+const inter = Inter({ subsets: ['latin'] });
 
 export default function RootLayout({
   children,
@@ -17,16 +10,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    // <ClerkProvider>
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        {/* <Providers> */}
-        <Navbar />
-        test
-        <main className="container py-10">{children}</main>
-        {/* </Providers> */}
-      </body>
-    </html>
-    // </ClerkProvider>
+    <div className={inter.className}>
+    <main className="container py-10">
+    <Providers>
+      <Navbar />
+      {children}
+      </Providers>
+    </main>
+    </div>
   );
 }

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import type { Metadata } from "next";
+import RootLayout from "@/layout";
 
 export const metadata: Metadata = {
   title: "Airbnb",
@@ -15,8 +16,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-      Empty
+      <div className="text-3xl font-bold underline">
+        <RootLayout>
+         <div>home page</div>
+        </RootLayout>
       </div>
     </>
-  ); }
+  );
+}

@@ -1,3 +1,4 @@
+import { Input } from '@/components/ui/input';
 import React, { FC } from 'react';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
@@ -10,9 +11,10 @@ interface INavSearchProps {
  */
 export const NavSearch: FC<INavSearchProps> = ({ }) => {
   return (
-    <div>
-      <h1>NavSearch</h1>
-    </div>
+    <Input
+    type='search'
+    placeholder='find a property...'
+    className='max-w-xs dark:bg-muted '
+  />
   );
 };
-

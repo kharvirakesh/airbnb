@@ -1,5 +1,7 @@
 import React, { FC } from 'react';
-
+import { LuTent } from 'react-icons/lu';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface ILogoProps {
 }
@@ -10,9 +12,14 @@ interface ILogoProps {
  */
 export const Logo: FC<ILogoProps> = ({ }) => {
   return (
-    <div>
-      <h1>Logo</h1>
-    </div>
+    <Button size='icon' asChild>
+    <Link href='/'>
+      <LuTent className='w-6 h-6' />
+    </Link>
+  </Button>
   );
 };
+
+
+
 

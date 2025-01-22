@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { LuUser } from "react-icons/lu";
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
 interface IUserIconProps {
@@ -10,9 +11,6 @@ interface IUserIconProps {
  */
 export const UserIcon: FC<IUserIconProps> = ({ }) => {
   return (
-    <div>
-      <h1>UserIcon</h1>
-    </div>
+    <LuUser className='w-6 h-6 bg-primary rounded-full text-white' />
   );
 };
-
