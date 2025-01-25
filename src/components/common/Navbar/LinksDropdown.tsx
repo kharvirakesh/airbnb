@@ -43,7 +43,7 @@ export const LinksDropdown: FC<ILinksDropdownProps> = ({ }) => {
       </SignedOut>
 
       <SignedIn>
-      {links.map((link) => {
+      {links && links?.map((link) => {
         return (
           <DropdownMenuItem key={link.href}>
             <Link href={link.href} className='capitalize w-full'>
