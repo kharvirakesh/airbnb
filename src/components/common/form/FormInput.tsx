@@ -19,10 +19,9 @@ interface IFormInputProps {
 export const FormInput: FC<IFormInputProps> = ({ name, type, label, defaultValue, placeholder, isRequired }) => {
     return (
         <div className="mb-2">
-            <Label htmlFor={name} className='capitalize'>{label ?? ''}</Label>
+            <Label htmlFor={name} className='capitalize'>
+                {label ?? ''}</Label>
             <Input type={type} id={name} name={name} defaultValue={defaultValue} placeholder={placeholder} required={isRequired} />
         </div>
     );
 };
-
-export default FormInput;

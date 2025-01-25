@@ -24,4 +24,3 @@ export const BoilerPlateCode: FC<IBoilerPlateCodeProps> = ({ property1, property
   );
 };
 
-export default BoilerPlateCode;
