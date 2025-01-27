@@ -20,3 +20,7 @@ Each commit message should be structured as follows:
 
 ### **Commit Message Example**
 feat(button): add new primary button component
+
+### ** Supabase Database dashboard ** ###
+https://supabase.com/dashboard/project/ljbzqdqjprvycyfipoqy
+db_password = xaeb4fo74VCJQwtv
